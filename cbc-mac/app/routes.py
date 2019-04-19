@@ -56,7 +56,7 @@ def Quizzes():
     quiz.create_all()
     allUsers=Questionclass.query.all()
     global arr
-    arr=random.sample(range(0, 9), 5)
+    arr=random.sample(range(0, 5), 5)
     return render_template('Quizzes.html', Question1=allUsers[arr[0]],Question2=allUsers[arr[1]])
 
 
@@ -75,8 +75,6 @@ def Manual():
 def Feedback():
     return render_template('Feedback.html')
 
-
-strings2 = list()
 
 
 @app.route('/check', methods=['POST'])
