@@ -51,12 +51,12 @@ def Experiment():
     return render_template('Experiment.html')
 
 
-@app.route('/Quizzes')
+@app.route('/Quizzes', methods=['POST', 'GET'])
 def Quizzes():
     quiz.create_all()
     allUsers=Questionclass.query.all()
     global arr
-    arr=random.sample(range(0, 5), 5)
+    arr=random.sample(range(0, 5), 2)
     return render_template('Quizzes.html', Question1=allUsers[arr[0]],Question2=allUsers[arr[1]])
 
 
