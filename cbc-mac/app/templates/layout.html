@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -98,7 +99,38 @@
                     <a href="../Introduction.html" class="sidebar-a">
 						Cryptography Lab
 					</a> &rarr;
-                    <a href="../Experiments.html" class="sidebar-a">
+                    <a href="../Experiments.html" class="sidebar-a"><script type="text/javascript">
+	// $('#Q-1').on('change', function() {
+	$("#Submit").click(function(event){
+		console.log("hsiuf");
+    	if ($('input[name=Q1]:checked', '#Q-1').val()) {
+			A1 = $('input[name=Q1]:checked', '#Q-1').val();
+		}
+		else
+		{
+			A1=4;
+		}
+		if ($('input[name=Q2]:checked', '#Q-2').val()) {
+			A2 = $('input[name=Q2]:checked', '#Q-2').val();
+		}
+		else
+		{
+			A2=4;
+		}
+   $.ajax({
+        data : {
+			Q1:A1,
+			Q2:A2
+        },
+        type : 'POST',
+        url : '/check'
+      })
+      .done(function(data) {
+        alert(data.output)
+      });
+      event.preventDefault();
+});
+</script>
 						List Of Experiments
 					</a> &rarr;
                     <a href="{{ url_for('Introduction') }}" class="sidebar-a">
@@ -142,7 +174,38 @@
                             {% block content %} {% endblock %}
                         </div>
                     </div>
-                </div>
+                </div><script type="text/javascript">
+	// $('#Q-1').on('change', function() {
+	$("#Submit").click(function(event){
+		console.log("hsiuf");
+    	if ($('input[name=Q1]:checked', '#Q-1').val()) {
+			A1 = $('input[name=Q1]:checked', '#Q-1').val();
+		}
+		else
+		{
+			A1=4;
+		}
+		if ($('input[name=Q2]:checked', '#Q-2').val()) {
+			A2 = $('input[name=Q2]:checked', '#Q-2').val();
+		}
+		else
+		{
+			A2=4;
+		}
+   $.ajax({
+        data : {
+			Q1:A1,
+			Q2:A2
+        },
+        type : 'POST',
+        url : '/check'
+      })
+      .done(function(data) {
+        alert(data.output)
+      });
+      event.preventDefault();
+});
+</script>
             </div>
             <!-- =================================================================================================================================== -->
         </div>
@@ -180,11 +243,73 @@
             </div>
         </footer>
     </div>
-    <!-- top div -->
+    <!-- top div --><script type="text/javascript">
+	// $('#Q-1').on('change', function() {
+	$("#Submit").click(function(event){
+		console.log("hsiuf");
+    	if ($('input[name=Q1]:checked', '#Q-1').val()) {
+			A1 = $('input[name=Q1]:checked', '#Q-1').val();
+		}
+		else
+		{
+			A1=4;
+		}
+		if ($('input[name=Q2]:checked', '#Q-2').val()) {
+			A2 = $('input[name=Q2]:checked', '#Q-2').val();
+		}
+		else
+		{
+			A2=4;
+		}
+   $.ajax({
+        data : {
+			Q1:A1,
+			Q2:A2
+        },
+        type : 'POST',
+        url : '/check'
+      })
+      .done(function(data) {
+        alert(data.output)
+      });
+      event.preventDefault();
+});
+</script>
 </body>
 
 
-<!-- jQuery -->
+<!-- jQuery --><script type="text/javascript">
+	// $('#Q-1').on('change', function() {
+	$("#Submit").click(function(event){
+		console.log("hsiuf");
+    	if ($('input[name=Q1]:checked', '#Q-1').val()) {
+			A1 = $('input[name=Q1]:checked', '#Q-1').val();
+		}
+		else
+		{
+			A1=4;
+		}
+		if ($('input[name=Q2]:checked', '#Q-2').val()) {
+			A2 = $('input[name=Q2]:checked', '#Q-2').val();
+		}
+		else
+		{
+			A2=4;
+		}
+   $.ajax({
+        data : {
+			Q1:A1,
+			Q2:A2
+        },
+        type : 'POST',
+        url : '/check'
+      })
+      .done(function(data) {
+        alert(data.output)
+      });
+      event.preventDefault();
+});
+</script>
 <script src="../static/js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
@@ -229,5 +354,36 @@
 
     });
 </script>
-
+<script type="text/javascript">
+	// $('#Q-1').on('change', function() {
+	$("#Submit").click(function(event){
+		console.log("hsiuf");
+    	if ($('input[name=Q1]:checked', '#Q-1').val()) {
+			A1 = $('input[name=Q1]:checked', '#Q-1').val();
+		}
+		else
+		{
+			A1=4;
+		}
+		if ($('input[name=Q2]:checked', '#Q-2').val()) {
+			A2 = $('input[name=Q2]:checked', '#Q-2').val();
+		}
+		else
+		{
+			A2=4;
+		}
+   $.ajax({
+        data : {
+			Q1:A1,
+			Q2:A2
+        },
+        type : 'POST',
+        url : '/check'
+      })
+      .done(function(data) {
+        alert(data.output)
+      });
+      event.preventDefault();
+});
+</script>
 </html>
