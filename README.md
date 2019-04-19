@@ -12,6 +12,11 @@ sudo apt install python-pip
 pip install flask
 pip install sqlalchemy
 ```
+##To get database (if inexistent)
+
+```bash
+python create_quiz_database.py
+```
 
 ## Running the Experiment
 
@@ -98,7 +103,7 @@ cbc-mac
 
 ## Exiting 
 
-Just press Ctrl+C on the terminal on which server is runnig.
+Just press Ctrl+C on the terminal on which server is running.
 
 ## Built With
 
