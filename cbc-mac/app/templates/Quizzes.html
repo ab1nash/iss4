@@ -3,9 +3,9 @@
 <div class="content" id="experiment-article-section-1-content">
     <!-- quiz content -->
     <!--edit -->
-<h1 class="text-h2-lightblue">Word Generation</h1><div class="content" id="experiment-article-section-6-content">
-<form id="Q-1">
-Q1. {{ Question1.Question }}
+<h1 class="text-h2-lightblue">Message Authentication Codes</h1><div class="content" id="experiment-article-section-6-content">
+  <form id="Q-1">
+Q1. {{ Question1.Question|safe }}
 <br/>	<input type="radio" name="Q1" value="1"> {{ Question1.Option1 }}
 <br/>	<input type="radio" name="Q1" value="2"> {{ Question1.Option2 }}
 <br/>	<input type="radio" name="Q1" value="3"> {{ Question1.Option3 }}
@@ -13,42 +13,18 @@ Q1. {{ Question1.Question }}
 </div>
 <div>
 <form id="Q-2">
-Q2. {{ Question2.Question }}
+Q2. {{ Question2.Question|safe }}
 <br/>	<input type="radio" name="Q2" value="1"> {{ Question2.Option1 }}
 <br/>	<input type="radio" name="Q2" value="2"> {{ Question2.Option2 }}
 <br/>	<input type="radio" name="Q2" value="3"> {{ Question2.Option3 }}
 </form>
 </div>
 <div>
-<form id="Q-3">
-Q3. {{ Question3.Question }}
-<br/>	<input type="radio" name="Q3" value="1"> {{ Question3.Option1 }}
-<br/>	<input type="radio" name="Q3" value="2"> {{ Question3.Option2 }}
-<br/>	<input type="radio" name="Q3" value="3"> {{ Question3.Option3 }}
-</form>
-</div>
-<div>
-<form id="Q-4">
-Q4. {{ Question4.Question }}
-<br/>	<input type="radio" name="Q4" value="1"> {{ Question4.Option1 }}
-<br/>	<input type="radio" name="Q4" value="2"> {{ Question4.Option2 }}
-<br/>	<input type="radio" name="Q4" value="3"> {{ Question4.Option3 }}
-</form>
-</div>
-<div>
-<form id="Q-5">
-Q5. {{ Question5.Question }}
-<br/>	<input type="radio" name="Q5" value="1"> {{ Question5.Option1 }}
-<br/>	<input type="radio" name="Q5" value="2"> {{ Question5.Option2 }}
-<br/>	<input type="radio" name="Q5" value="3"> {{ Question5.Option3 }}
-</form>
-
 <button   id="Submit" >Submit</button>
 
 </div>						</div>
-</div>
-</div>
-<!-- =================================================================================================================================== -->
+        </div>
+    </div><!-- =================================================================================================================================== -->
 
 </div>
 {% endblock %}

@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 import random
 import itertools
 import sqlite3
+#app = Flask(__name__)
 
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///quiz.db'
@@ -52,7 +53,12 @@ def Experiment():
 
 @app.route('/Quizzes')
 def Quizzes():
-    return render_template('Quizzes.html')
+    quiz.create_all()
+    allUsers=Questionclass.query.all()
+    global arr
+    arr=random.sample(range(0, 9), 5)
+    return render_template('Quizzes.html', Question1=allUsers[arr[0]],Question2=allUsers[arr[1]])
+
 
 
 @app.route('/Further')
@@ -73,51 +79,30 @@ def Feedback():
 strings2 = list()
 
 
-@app.route('/check',methods= ['POST'])
+@app.route('/check', methods=['POST'])
 def check():
-    R1=request.form['Q1']
-    R2=request.form['Q2']
-    R3=request.form['Q3']
-    R4=request.form['Q4']
-    R5=request.form['Q5']
+    R1 = request.form['Q1']
+    R2 = request.form['Q2']
     quiz.create_all()
-    allUsers=Questionclass.query.all()
-    Correct="Correct Answers : "
-    Wrong="Wrong Answers : "
-    Unattempted="Unattempted  : "
+    allUsers = Questionclass.query.all()
+    Correct = "Correct Answers : "
+    Wrong = "Wrong Answers : "
+    Unattempted = "Unattempted  : "
 
     global arr
-    if R1==allUsers[arr[0]].Answer:
-        Correct+="1 "
-    elif R1=='4':
-        Unattempted+="1 "
+    if R1 == allUsers[arr[0]].Answer:
+        Correct += "1 "
+    elif R1 == '4':
+        Unattempted += "1 "
     else:
-        Wrong+="1 "
-    if R2==allUsers[arr[1]].Answer:
-        Correct+="2 "
-    elif R2=='4':
-        Unattempted+="2 "
+        Wrong += "1 "
+    if R2 == allUsers[arr[1]].Answer:
+        Correct += "2 "
+    elif R2 == '4':
+        Unattempted += "2 "
     else:
-        Wrong+="2 "
-    if R3==allUsers[arr[2]].Answer:
-        Correct+="3 "
-    elif R3=='4':
-        Unattempted+="3 "
-    else:
-        Wrong+="3 "
-    if R4==allUsers[arr[3]].Answer:
-        Correct+="4 "
-    elif R4=='4':
-        Unattempted+="4 "
-    else:
-        Wrong+="4 "
-    if R5==allUsers[arr[4]].Answer:
-        Correct+="5 "
-    elif R5=='4':
-        Unattempted+="5 "
-    else:
-        Wrong+="5 "
-    Correct+="\n"
-    Wrong+="\n"
-    Unattempted+="\n"
-    return jsonify({'output':Correct+Wrong+Unattempted})
+        Wrong += "2 "
+    Correct += "\n"
+    Wrong += "\n"
+    Unattempted += "\n"
+    return jsonify({'output': Correct + Wrong + Unattempted})
