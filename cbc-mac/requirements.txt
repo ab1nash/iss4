@@ -9,7 +9,7 @@ Flask==1.0.2
 Flask-SQLAlchemy==2.3.2
 html5lib==0.999
 itsdangerous==1.1.0
-Jinja2==2.10
+Jinja2==2.10.1
 lockfile==0.12.2
 lxml==3.5.0
 MarkupSafe==1.1.1
