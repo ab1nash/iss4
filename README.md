@@ -37,9 +37,7 @@ Testing is done in two steps:-
 	 				$ python3 Links_Test.py		
 ```
 
-2) Unit testing for logic part of the Experiment
-		Run the the test case written in Unit_test.txt file
-		and match the outputs.
+
 
 ## Folder Structre
 
