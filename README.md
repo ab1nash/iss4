@@ -12,7 +12,7 @@ sudo apt install python-pip
 pip install flask
 pip install sqlalchemy
 ```
-##To get database (if inexistent)
+## To get database (if inexistent)
 
 ```bash
 python create_quiz_database.py
