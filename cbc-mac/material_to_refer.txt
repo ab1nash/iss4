@@ -1,5 +1,0 @@
-http://www.cse.iitm.ac.in/~chester/courses/16e_cns/slides/03_PerfectSecrecy.pdf
-
-QUIZ:
-http://mytechclassnotes.blogspot.com/2017/01/cryptography-week-1-quiz.html
-
