@@ -1,0 +1,396 @@
+/*CODE TO RESET THE DEFAULT STYLES OF THE BROWSER COPIED FROM NET*/
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/*MY CODE*/
+
+body{
+	background-size: 1850px 980px;
+	position: relative;
+    background-color: black;
+
+}
+
+.navbar{
+	size: 5%;
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+
+}
+
+#a1{
+	font-family: 'Staatliches', cursive;
+	font-size: 40px;
+	font-style: italic;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+}
+
+#a1:hover{
+  font-size: 45px;
+  color: red;
+}
+
+header .list{
+	float: right;
+}
+
+header .list a {
+	font-family: 'Staatliches', cursive;
+	font-size: 40px;
+	padding: 0 10px;
+	color: white;
+	text-decoration: none;
+}
+
+header .list a:hover{
+	font-size: 45px;
+	color: red;
+}
+
+.main {
+        width: 100%;
+}
+
+.about {
+        float: left;
+        width: 70%;
+}
+
+.about p {
+        font-family: 'Merienda', cursive;
+        float: right;
+        margin-top: 20%;
+        margin-right: 55%;
+        color: white;
+
+}
+
+.slideshow {
+    width: 30%;
+    top: 40%;
+    /*position: absolute;*/
+    /*bottom: 5%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.slideshow img {
+    /*background-color: rgba(255, 39, 20, 0.5);*/
+    /*position: absolute;*/
+    /*top: 40%;*/
+    margin-right: 25%;
+    /*margin-left: 5%;*/
+    margin-top: 40%;
+    padding: 20px;
+    width: 35vh;
+    height: 35vh;
+    align-content: center;
+    border-radius: 50%;
+}
+
+#like {
+
+    height: 5vw;
+    width: 5vw;
+    border-radius: 0%;
+    background-image: red;
+    align-content: center;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+main p {
+    font-size: 20px;
+    margin-right: 20%;
+    padding: 15px;
+    color: white;
+}
+
+b {
+    color: red;
+}
+
+
+@media only screen and (max-width: 768px)
+{
+     body{
+    background-size: 768px 1024px;
+    
+}
+
+#a1{
+   
+    font-size: 30px;    
+}
+
+#a1:hover{
+  font-size: 35px;
+}
+
+
+
+header .list a {
+    font-size: 30px;
+}
+
+header .list a:hover{
+    font-size: 35px;
+    }
+
+.main {
+        width: 100%;
+}
+
+.about {
+        float: left;
+        width: 70%;
+}
+
+
+
+.slideshow {
+    width: 20%;
+    top: 40%;
+    /*position: absolute;*/
+    /*bottom: 5%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.slideshow img {
+    /*background-color: rgba(255, 39, 20, 0.5);*/
+    /*position: absolute;*/
+    /*top: 40%;*/
+    margin-right: 80%;
+    /*margin-left: 5%;*/
+    margin-top: 40%;
+    padding: 20px;
+    width: 25vh;
+    height: 25vh;
+    align-content: center;
+    border-radius: 50%;
+}
+
+#like {
+
+    height: 5vw;
+    width: 5vw;
+    border-radius: 0%;
+    background-image: red;
+    align-content: center;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+
+}
+
+@media only screen and (max-width: 414px)
+{
+
+    body{
+    
+    background-size: 414px 736px;
+    }
+
+
+
+#a1{
+    
+    font-size: 15px;
+    float: left;
+    }
+
+#a1:hover{
+  font-size: 15px;
+  
+}
+
+header .list{
+    padding: 0 0 0 300px; 
+}
+
+header .list a {
+    
+    font-size: 15px;
+    
+}
+
+header .list a:hover{
+    font-size: 15px;
+    
+}
+
+.main {
+        width: 100%;
+}
+
+.about {
+        float: left;
+        width: 70%;
+}
+
+.about p {
+        font-family: 'Merienda', cursive;
+        float: right;
+        margin-top: 20%;
+        margin-right: 55%;
+        color: white;
+
+}
+
+.slideshow {
+    width: 30%;
+    top: 40%;
+    /*position: absolute;*/
+    /*bottom: 5%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.slideshow img {
+    /*background-color: rgba(255, 39, 20, 0.5);*/
+    /*position: absolute;*/
+    /*top: 40%;*/
+    margin-right: 25%;
+    /*margin-left: 5%;*/
+    margin-top: 40%;
+    padding: 20px;
+    width: 35vh;
+    height: 35vh;
+    align-content: center;
+    border-radius: 50%;
+}
+
+#like {
+
+    height: 5vw;
+    width: 5vw;
+    border-radius: 0%;
+    background-image: red;
+    align-content: center;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+main p {
+    font-size: 20px;
+    margin-right: 20%;
+    padding: 15px;
+    color: white;
+}
+
+b {
+    color: red;
+}
+
+}

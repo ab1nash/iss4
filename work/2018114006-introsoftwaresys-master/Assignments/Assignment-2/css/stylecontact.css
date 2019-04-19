@@ -1,0 +1,412 @@
+/*CODE TO RESET THE DEFAULT STYLES OF THE BROWSER COPIED FROM NET*/
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/*MY CODE*/
+
+body{
+    background-image: url(../img/contact2.jpg);
+    background-size: 1850px 950px;
+
+}
+
+#a1{
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    font-style: italic;
+    /*text-align: left;*/
+    float: left;
+    text-decoration: none;
+    color: black;
+}
+
+#a1:hover{
+  font-size: 45px;
+  color: red;
+}
+
+header .list{
+    float: right;
+}
+
+header .list a {
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    padding: 0 10px;
+    color: black;
+    text-decoration: none;
+}
+
+header .list a:hover{
+    font-size: 45px;
+    color: red;
+}
+
+main .p1{
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    font-style: italic;
+    color: #FF0D28;
+    text-align: right;
+    padding: 70px 425px;
+}
+
+main .p2{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    font-style: italic;
+    color: #black;
+    text-align: right;
+    padding: 0px 520px;
+}
+
+main .p3{
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    font-style: italic;
+    color: #FF0D28;
+    padding: 30px 300px 0 700px;
+    text-align: center;
+}
+
+
+
+.connect{
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  left: 44%;
+  }
+
+td{
+    padding-right: 7vw;
+    padding-bottom: 4vw;
+}
+
+img{
+    height: 5vw;
+    border-radius: 0%;
+    background-color: transparent;
+}
+
+.facebook :hover{
+     filter: invert(1);
+}
+
+.mail :hover{
+     filter: invert(1);
+}
+
+.insta :hover{
+     filter: invert(1);
+}
+
+.git :hover{
+     filter: invert(1);
+}
+
+@media only screen and (max-width: 768px)
+
+/*@media only screen and (max-width: 1000px)*/
+
+{
+   body{
+    background-image: url(../img/contact2.jpg);
+    background-size: 768px 950px;
+
+}
+
+#a1{
+    font-size: 30px;
+    float: left;
+}
+
+#a1:hover{
+  font-size: 35px;
+  color: red;
+}
+
+header .list{
+    float: right;
+}
+
+header .list a {
+    font-size: 30px;
+}
+
+header .list a:hover{
+    font-size: 35px;
+    color: red;
+}
+
+main .p1{
+    font-size: 40px;
+    padding: 100px 100px;
+}
+
+main .p2{
+    font-size: 40px;
+    padding: 0px 130px;
+}
+
+main .p3{
+    font-size: 25px;
+    padding: 20px 60px 0 300px;
+    text-align: center;
+}
+
+
+
+.connect{
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  left: 44%;
+  }
+
+td{
+    padding-right: 7vw;
+    padding-bottom: 4vw;
+}
+
+img{
+    height: 5vw;
+    border-radius: 0%;
+    background-color: transparent;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 414px)
+{
+    body{
+    background-image: url(../img/contact2.jpg);
+    background-size: 414px 736px;
+
+}
+
+#a1{
+    font-size: 15px;
+    float: left;
+    /*text-align: center;*/
+}
+
+#a1:hover{
+  font-size: 15px;  
+  color: red;
+}
+
+header .list{
+    /*float: left;*/
+    padding: 0 0 0 300px; 
+}
+
+header .list a {
+    font-size: 15px;
+}
+
+header .list a:hover{
+    color: red;
+    font-size: 15px;
+}
+
+main .p1{
+    font-size: 25px;
+    padding: 30px 40px;
+}
+
+main .p2{
+    font-size: 25px;
+    padding: 5px 55px;
+}
+
+main .p3{
+    font-size: 17px;
+    padding: 15px 40px 0 150px;
+    text-align: center;
+}
+
+.connect{
+  position: absolute;
+  top: 55%;
+  text-align: center;
+  left: 44%;
+  }
+
+td{
+    padding-right: 5vw;
+    padding-bottom: 4vw;
+}
+
+img{
+    height: 8vw;
+}
+
+}
+
+@media only screen and (max-width: 375px)
+{
+    body{
+    background-image: url(../img/contact2.jpg);
+    background-size: 414px 736px;
+
+}
+
+#a1{
+    font-size: 15px;
+    float: left;
+    /*text-align: center;*/
+}
+
+#a1:hover{
+  font-size: 15px;  
+  color: red;
+}
+
+header .list{
+    /*float: left;*/
+    padding: 0 0 0 280px; 
+}
+
+header .list a {
+    font-size: 15px;
+}
+
+header .list a:hover{
+    color: red;
+    font-size: 15px;
+}
+
+main .p1{
+    font-size: 25px;
+    padding: 30px 40px;
+}
+
+main .p2{
+    font-size: 25px;
+    padding: 5px 55px;
+}
+
+main .p3{
+    font-size: 17px;
+    padding: 15px 40px 0 150px;
+    text-align: center;
+}
+
+.connect{
+  position: absolute;
+  top: 55%;
+  text-align: center;
+  left: 44%;
+  }
+
+td{
+    padding-right: 5vw;
+    padding-bottom: 4vw;
+}
+
+img{
+    height: 8vw;
+}
+
+}
+
